@@ -1,139 +1,104 @@
+/* General body styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3f2ef;
 }
 
+/* Container for the sign-in form */
 .container {
-  text-align: center;
-  margin: 10px;
+    background: white;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
 }
 
+/* Logo styling */
 .logo img {
-  width: 100px;
-  margin-bottom: 15px;
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
 }
 
-.signin-box {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  width: 300px;  /* Increased the width from 260px to 300px */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
+/* Sign-in box styling */
 .signin-box h1 {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.signin-box label {
-  display: block;
-  text-align: left;
-  margin-bottom: 5px;
-  font-weight: bold;
+.signin-box p {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-.signin-box form {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+/* Form and input fields */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.signin-box input {
-  padding: 6px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 0.95rem;
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-.signin-box button[type="submit"], .create-account-button {
-  padding: 8px;
-  margin-bottom: 8px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
-.signin-box button[type="submit"] {
-  background-color: #f0c14b;
-  color: #111;
+/* Sign-in button */
+.signin-button {
+    background-color: #0073b1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.signin-box button[type="submit"]:hover {
-  background-color: #e2b134;
+.signin-button:hover {
+    background-color: #005582;
 }
 
-.create-account-button {
-  background-color: #e2e2e2;
-  color: #111;
+/* Forgot password link */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0073b1;
+    text-decoration: none;
 }
 
-.create-account-button:hover {
-  background-color: #d5d5d5;
+.forgot-password:hover {
+    text-decoration: underline;
 }
 
-.terms {
-  font-size: 0.75rem;
-  margin-top: 8px;
+/* Join now section */
+.join-now {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-.terms a {
-  color: #0066c0;
-  text-decoration: none;
+.join-now a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.help-link {
-  display: block;
-  margin-top: 10px;
-  color: #0066c0;
-  text-decoration: none;
-  font-size: 0.75rem;
-}
-
-.help-link:hover {
-  text-decoration: underline;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 15px 0;
-}
-
-.business-link {
-  font-size: 0.75rem;
-  margin-bottom: 8px;
-}
-
-.new-user {
-  margin: 15px 0 8px;
-  font-size: 0.85rem;
-}
-
-footer {
-  margin-top: 15px;
-  font-size: 0.75rem;
-  text-align: center;
-  color: #555;
-}
-
-footer a {
-  color: #0066c0;
-  margin: 0 5px;
-  text-decoration: none;
-}
-
-footer p {
-  margin-top: 8px;
-  font-size: 0.7rem;
+.join-now a:hover {
+    text-decoration: underline;
 }
